@@ -51,7 +51,11 @@ button {
   cursor: pointer;
 }
 
+main {
+  flex: 1;
+}
+
 .container {
   /* max-width: 120rem; */
-  min-height: 50rem;
+  min-height: 100vh;
 }

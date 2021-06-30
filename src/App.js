@@ -1,19 +1,12 @@
-import Container from "./components/Container";
-import Content from "./components/Content";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
+import { BrowserRouter } from 'react-router-dom';
+
+import Routes from './routes';
 
 function App() {
   return (
-    <Container>
-      <Header />
-      <Content>
-        <Sidebar />
-        <main>
-          <p>Conteudo principal</p>
-        </main>
-      </Content>
-    </Container>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   );
 }
 
