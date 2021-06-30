@@ -52,4 +52,13 @@
   text-transform: uppercase;
   margin-top: 1.5rem;
 }
+
+.login-error {
+  display: inline-block;
+  background: rgba(250, 14, 14, 0.726);
+  padding: 0.5rem 2rem;
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
 /*# sourceMappingURL=styles.css.map */

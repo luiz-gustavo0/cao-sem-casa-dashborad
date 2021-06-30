@@ -1,0 +1,75 @@
+.input-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: inherit;
+}
+
+.input-group input {
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  border: 1px solid rgba(153, 153, 153, 0.596);
+  border-radius: 0.5rem;
+  background: #fff;
+  color: inherit;
+  margin-bottom: 0.3rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.input-group input::-webkit-input-placeholder {
+  color: var(--gray-color);
+}
+
+.input-group input:-ms-input-placeholder {
+  color: var(--gray-color);
+}
+
+.input-group input::-ms-input-placeholder {
+  color: var(--gray-color);
+}
+
+.input-group input::placeholder {
+  color: var(--gray-color);
+}
+
+.input-group input:hover, .input-group input:focus {
+  border-color: var(--gray-color);
+}
+
+.input-group input:invalid {
+  border-color: rgba(255, 0, 0, 0.877);
+}
+
+.input-group input:disabled {
+  background: rgba(153, 153, 153, 0.192);
+}
+
+.input-group input:disabled:hover {
+  border-color: rgba(153, 153, 153, 0.192);
+}
+
+.input-group .error {
+  color: rgba(255, 0, 0, 0.877);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .input-group label,
+  .input-group input {
+    font-size: 1.4rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

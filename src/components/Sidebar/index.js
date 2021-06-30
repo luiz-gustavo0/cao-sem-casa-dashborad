@@ -8,23 +8,24 @@ const Sidebar = () => {
     <nav className='sidebar'>
       <ul className='side-nav'>
         <li className='side-item active'>
-          <a href='#'>Home</a>
+          <a href='#'>Dashboard</a>
           {/* <Link to='/'>Dashboard</Link> */}
         </li>
         <li className='side-item'>
-          <a href='#'>Home</a>
+          <a href='#'>Adoções</a>
           {/* <Link to='adocao'>Adoções</Link> */}
         </li>
         <li className='side-item'>
-          <a href='#'>Home</a>
+          <a href='#'>Animais</a>
           {/* <Link to='/animais'>Animais</Link> */}
         </li>
         <li className='side-item'>
-          <a href='#'>Home</a>
+          <a href='#'>Usuários</a>
           {/* <Link to='/users'>Usuários</Link> */}
         </li>
         <li className='side-item'>
-          <a href='#'>Home</a>
+          <a href='#'>Meus Dados</a>
+
           {/* <Link to='/conta'>Meus Dados</Link> */}
         </li>
       </ul>

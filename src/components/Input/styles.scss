@@ -1,0 +1,59 @@
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  label {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: inherit;
+  }
+
+  input {
+    font-size: 1.6rem;
+    padding: 0.8rem;
+    border: 1px solid rgba(153, 153, 153, 0.596);
+    border-radius: 0.5rem;
+    background: #fff;
+    color: inherit;
+    margin-bottom: 0.3rem;
+    transition: all 0.2s;
+
+    &::placeholder {
+      color: var(--gray-color);
+    }
+
+    &:hover,
+    &:focus {
+      border-color: var(--gray-color);
+    }
+
+    &:invalid {
+      border-color: rgba(255, 0, 0, 0.877);
+    }
+
+    &:disabled {
+      background: rgba(153, 153, 153, 0.192);
+
+      &:hover {
+        border-color: rgba(153, 153, 153, 0.192);
+      }
+    }
+  }
+
+  .error {
+    color: rgba(255, 0, 0, 0.877);
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 600px) {
+  .input-group {
+    label,
+    input {
+      font-size: 1.4rem;
+    }
+  }
+}
