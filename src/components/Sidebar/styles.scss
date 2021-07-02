@@ -63,14 +63,9 @@
       background-color 0.1s;
   }
 
-  &:hover::before,
-  &.active::before {
+  &:hover::before {
     transform: scaleY(1);
     width: 100%;
-  }
-
-  &:active::before {
-    background-color: var(--primary-color-80);
   }
 }
 

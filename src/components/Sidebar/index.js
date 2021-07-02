@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import CustomLink from '../CustomLink';
 
 import './styles.css';
 
@@ -7,26 +7,24 @@ const Sidebar = () => {
   return (
     <nav className='sidebar'>
       <ul className='side-nav'>
-        <li className='side-item active'>
-          <a href='#'>Dashboard</a>
-          {/* <Link to='/'>Dashboard</Link> */}
+        <li className='side-item'>
+          <CustomLink
+            activeOnlyWhenExact={true}
+            to='/dashboard'
+            label='Dashboard'
+          />
         </li>
         <li className='side-item'>
-          <a href='#'>Adoções</a>
-          {/* <Link to='adocao'>Adoções</Link> */}
+          <CustomLink to='/dashboard/adocoes' label='Adoções' />
         </li>
         <li className='side-item'>
-          <a href='#'>Animais</a>
-          {/* <Link to='/animais'>Animais</Link> */}
+          <CustomLink to='/dashboard/animais' label='Animais' />
         </li>
         <li className='side-item'>
-          <a href='#'>Usuários</a>
-          {/* <Link to='/users'>Usuários</Link> */}
+          <CustomLink to='/dashboard/users' label='Usuários' />
         </li>
         <li className='side-item'>
-          <a href='#'>Meus Dados</a>
-
-          {/* <Link to='/conta'>Meus Dados</Link> */}
+          <CustomLink to='/dashboard/conta' label='Meus Dados' />
         </li>
       </ul>
 
