@@ -1,0 +1,8 @@
+.main-container {
+  padding: 2rem 4rem;
+  font-size: 1.6rem;
+  height: calc(100vh - 7rem);
+  overflow-y: scroll;
+  background: var(--color-gray-light-1);
+}
+/*# sourceMappingURL=styles.css.map */

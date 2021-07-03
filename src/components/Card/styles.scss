@@ -1,0 +1,42 @@
+.card {
+  width: 20rem;
+  height: 12rem;
+  padding: 1rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.2);
+
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  span {
+    // text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+  }
+
+  &-animals {
+    span {
+      color: var(--secundary-color);
+    }
+  }
+
+  &-adocoes {
+    span {
+      color: #5b85aa;
+    }
+  }
+
+  &-users {
+    span {
+      color: #ffa630;
+    }
+  }
+}
