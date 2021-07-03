@@ -61,7 +61,7 @@ const ContentDashboard = () => {
           className='card-users'
         />
       </div>
-      <div className='list list-animals'>
+      <div className='list'>
         <h3>Animais</h3>
         <ul>
           {dataAnimals.rows &&
@@ -83,7 +83,7 @@ const ContentDashboard = () => {
             ))}
         </ul>
       </div>
-      <div className='list list-adopiton'>
+      <div className='list'>
         <h3>Adoções</h3>
         <ul>
           {dataAdoptions.rows &&
