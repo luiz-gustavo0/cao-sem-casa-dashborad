@@ -18,7 +18,7 @@ const ContentDashboard = () => {
     }
 
     fetchAnimals();
-  }, []);
+  }, [handleDelete]);
 
   useEffect(() => {
     async function fetchUsers() {
@@ -40,7 +40,10 @@ const ContentDashboard = () => {
     fetchAdoptions();
   }, []);
 
-  console.log(dataAdoptions);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  async function handleDelete(id) {
+    const response = await api.delete(`/pets/${id}`);
+  }
 
   return (
     <div className='dashboard-container'>
@@ -76,7 +79,9 @@ const ContentDashboard = () => {
                     <Link to={`/dashboard/animal-profile/${animal.id}`}>
                       Editar
                     </Link>
-                    <button>Excluir</button>
+                    <button onClick={() => handleDelete(animal.id)}>
+                      Excluir
+                    </button>
                   </div>
                 </div>
               </li>
@@ -108,7 +113,6 @@ const ContentDashboard = () => {
                     >
                       Confirmar
                     </Link>
-                    <button>Excluir</button>
                   </div>
                 </div>
               </li>

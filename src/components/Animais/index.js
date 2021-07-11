@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
-import Form from '../Form';
+import FormRegisterAnimal from '../FormRegisterAnimal';
 
 import './styles.css';
 
@@ -31,7 +31,7 @@ const Animais = () => {
         </button>
       )}
       <div className={`box-form ${isFormActive ? 'form-active' : ''}`}>
-        <Form />
+        <FormRegisterAnimal />
       </div>
       <div className='list-animals'>
         <h3>Animais</h3>

@@ -17,7 +17,20 @@
   gap: 2rem;
 }
 
-.form .input-group select {
+.form .group div {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.form .group label {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: inherit;
+}
+
+.form .group input,
+.form .group select {
+  width: 100%;
   font-size: 1.6rem;
   padding: 0.8rem;
   border: 1px solid rgba(153, 153, 153, 0.596);
@@ -27,6 +40,42 @@
   margin-bottom: 0.3rem;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+.form .group input::-webkit-input-placeholder {
+  color: var(--gray-color);
+}
+
+.form .group input:-ms-input-placeholder {
+  color: var(--gray-color);
+}
+
+.form .group input::-ms-input-placeholder {
+  color: var(--gray-color);
+}
+
+.form .group input::placeholder {
+  color: var(--gray-color);
+}
+
+.form .group input:hover, .form .group input:focus {
+  border-color: var(--gray-color);
+}
+
+.form .group input:disabled {
+  background: rgba(153, 153, 153, 0.192);
+}
+
+.form .group input:disabled:hover {
+  border-color: rgba(153, 153, 153, 0.192);
+}
+
+.form .group input[type='file'] {
+  padding: 0.6rem;
+}
+
+.form .group-select {
+  margin-top: 1.5rem;
 }
 
 .form button {
