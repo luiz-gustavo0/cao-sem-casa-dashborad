@@ -10,6 +10,7 @@ import Content from '../../components/Content';
 import ContentDashboard from '../../components/ContentDashboard';
 import Header from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
+import UserProfile from '../../components/UserProfile';
 import Users from '../../components/Users';
 
 import './styles.css';
@@ -36,6 +37,7 @@ const Dashboard = () => {
               component={AnimalProfile}
             />
             <Route path='/dashboard/users' component={Users} />
+            <Route path='/dashboard/user-profile/:id' component={UserProfile} />
             <Route path='/dashboard/conta' component={Account} />
           </Switch>
         </main>
