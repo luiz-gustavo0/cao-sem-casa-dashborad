@@ -1,0 +1,136 @@
+.animal-info-container {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 4rem;
+  -webkit-box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+}
+
+.animal-info-container h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.animal-info-container .animal-info-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.animal-info-container .animal-image {
+  max-width: 30rem;
+  height: 32rem;
+  border-radius: 0.5rem;
+}
+
+.animal-info-container form {
+  width: 100%;
+}
+
+.animal-info-container form .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  padding: 0.5rem 0rem;
+}
+
+.animal-info-container form .group div {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.animal-info-container form .group label {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: inherit;
+}
+
+.animal-info-container form .group input,
+.animal-info-container form .group select,
+.animal-info-container form .group textarea {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  border: 1px solid rgba(153, 153, 153, 0.596);
+  border-radius: 0.5rem;
+  background: #fff;
+  color: inherit;
+  margin-bottom: 0.3rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.animal-info-container form .group input::-webkit-input-placeholder,
+.animal-info-container form .group select::-webkit-input-placeholder,
+.animal-info-container form .group textarea::-webkit-input-placeholder {
+  color: var(--gray-color);
+}
+
+.animal-info-container form .group input:-ms-input-placeholder,
+.animal-info-container form .group select:-ms-input-placeholder,
+.animal-info-container form .group textarea:-ms-input-placeholder {
+  color: var(--gray-color);
+}
+
+.animal-info-container form .group input::-ms-input-placeholder,
+.animal-info-container form .group select::-ms-input-placeholder,
+.animal-info-container form .group textarea::-ms-input-placeholder {
+  color: var(--gray-color);
+}
+
+.animal-info-container form .group input::placeholder,
+.animal-info-container form .group select::placeholder,
+.animal-info-container form .group textarea::placeholder {
+  color: var(--gray-color);
+}
+
+.animal-info-container form .group input:hover, .animal-info-container form .group input:focus,
+.animal-info-container form .group select:hover,
+.animal-info-container form .group select:focus,
+.animal-info-container form .group textarea:hover,
+.animal-info-container form .group textarea:focus {
+  border-color: var(--gray-color);
+}
+
+.animal-info-container form .group input:disabled,
+.animal-info-container form .group select:disabled,
+.animal-info-container form .group textarea:disabled {
+  background: rgba(153, 153, 153, 0.192);
+}
+
+.animal-info-container form .group input:disabled:hover,
+.animal-info-container form .group select:disabled:hover,
+.animal-info-container form .group textarea:disabled:hover {
+  border-color: rgba(153, 153, 153, 0.192);
+}
+
+.animal-info-container form .group input[type='file'] {
+  padding: 0.6rem;
+}
+
+.animal-info-container form button {
+  padding: 1rem 2rem;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 2rem;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -18,7 +18,7 @@ const ContentDashboard = () => {
     }
 
     fetchAnimals();
-  }, [handleDelete]);
+  }, []);
 
   useEffect(() => {
     async function fetchUsers() {
@@ -42,7 +42,13 @@ const ContentDashboard = () => {
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   async function handleDelete(id) {
-    const response = await api.delete(`/pets/${id}`);
+    const confirm = window.confirm('Tem certeza que deseja deletar este item?');
+
+    if (confirm) {
+      const response = await api.delete(`/pets/${id}`);
+    } else {
+      return;
+    }
   }
 
   return (
