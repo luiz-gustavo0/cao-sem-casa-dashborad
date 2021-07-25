@@ -117,8 +117,6 @@ const AnimalProfile = () => {
   if (animalInfo)
     return (
       <>
-        <p>Animal profile</p>
-
         <div className='animal-info-container'>
           <h3>Dados do animal</h3>
 

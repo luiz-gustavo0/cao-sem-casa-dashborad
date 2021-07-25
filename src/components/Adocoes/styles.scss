@@ -1,0 +1,51 @@
+.list-adoptions {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 4rem;
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+
+  ul {
+    li {
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-bottom: 1px solid var(--color-gray-light-1);
+    }
+  }
+
+  .adoption-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .adoption-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    span {
+      font-size: 1.4rem;
+    }
+  }
+
+  a {
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+  }
+}
