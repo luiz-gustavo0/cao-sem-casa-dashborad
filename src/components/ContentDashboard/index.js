@@ -117,7 +117,7 @@ const ContentDashboard = () => {
                       className='btn-confirm-adoption'
                       to={`/dashboard/confirm-adoption/${adoption.id}`}
                     >
-                      Confirmar
+                      Visualizar
                     </Link>
                   </div>
                 </div>

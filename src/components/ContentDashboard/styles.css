@@ -75,7 +75,7 @@
 }
 
 .dashboard-container .list .btn-group .btn-confirm-adoption {
-  background: #0b6e4f;
+  background: var(--primary-color);
 }
 
 .dashboard-container .list .adoption-info {

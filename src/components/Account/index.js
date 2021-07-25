@@ -110,6 +110,7 @@ const Account = () => {
                 register={register}
                 errors={errors}
                 required
+                disabled
               />
             </div>
             <div className='form-group'>

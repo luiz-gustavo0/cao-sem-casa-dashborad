@@ -16,10 +16,14 @@ const ConfirmAdoption = () => {
     async function fetchAdoption() {
       const response = await api.get(`/adoption/${id}`);
 
+      if (response.status !== 200) {
+        history.push('/dashboard/adocoes');
+      }
+
       setAdoption(response.data);
     }
     fetchAdoption();
-  }, [id]);
+  }, [id, history]);
 
   const sendMail = async () => {
     try {

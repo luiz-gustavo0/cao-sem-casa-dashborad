@@ -29,6 +29,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .user-nav > * {
@@ -47,5 +48,28 @@
   height: 4rem;
   max-width: 4rem;
   margin-right: 1rem;
+}
+
+.user-nav .user span {
+  margin-right: 1rem;
+}
+
+.user-nav .user button {
+  width: 100%;
+  padding: 1rem 2rem;
+  border: none;
+  background: none;
+  color: var(--color-gray-light-1);
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.user-nav .user button svg {
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+
+.user-nav .user button svg:hover path {
+  fill: var(--primary-color);
 }
 /*# sourceMappingURL=styles.css.map */

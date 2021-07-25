@@ -37,7 +37,7 @@ const Adocoes = () => {
                 <div className='adoption-item'>
                   <p>Status</p>
                   <span>
-                    {adoption.animal.status === 'nao adotado'
+                    {adoption.animal.status === 'não adotado'
                       ? 'Pendente'
                       : 'Adotado'}
                   </span>

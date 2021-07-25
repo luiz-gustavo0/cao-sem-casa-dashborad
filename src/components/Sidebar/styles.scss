@@ -20,7 +20,7 @@
     text-decoration: none;
     text-transform: uppercase;
     display: block;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 0;
     position: relative;
     z-index: 10;
 
@@ -29,22 +29,19 @@
   }
 
   & svg {
-    width: 1.75rem;
-    height: 1.75rem;
-    margin-right: 2rem;
-    fill: currentColor;
-
-    @media only screen and (max-width: 600px) {
-      margin-right: 0;
-      margin-bottom: 0.7rem;
-      width: 1.5rem;
-      height: 1.5rem;
-    }
+    width: 2rem;
+    height: 2rem;
+    z-index: 10;
   }
 }
 
 .side-item {
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  padding-left: 2rem;
 
   &:not(:last-child) {
     margin-bottom: 0.5rem;
