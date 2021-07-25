@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
+import { useToasts } from 'react-toast-notifications';
 import api from '../../services/api';
 
 import './styles.css';
 
 const ConfirmAdoption = () => {
   const [adoption, setAdoption] = useState(null);
-  const [error, setError] = useState(null);
   const { id } = useParams();
   const history = useHistory();
+
+  const { addToast } = useToasts();
 
   useEffect(() => {
     async function fetchAdoption() {
@@ -23,9 +25,17 @@ const ConfirmAdoption = () => {
     try {
       const response = await api.get(`/sendmail/${id}`);
 
-      console.log(response.data);
+      if (response.status === 200) {
+        addToast(response.data.message, {
+          appearance: 'success',
+          autoDismiss: true,
+        });
+      }
     } catch (err) {
-      setError(err.response.data.message);
+      addToast(err.response.data.message, {
+        appearance: 'error',
+        autoDismiss: true,
+      });
       console.log(err.response.data.message);
     }
   };
@@ -33,10 +43,17 @@ const ConfirmAdoption = () => {
   const confirmAdoption = async () => {
     try {
       const response = await api.put(`/adoption/${id}`);
-
-      console.log(response.data);
+      if (response.status === 200) {
+        addToast(response.data.message, {
+          appearance: 'success',
+          autoDismiss: true,
+        });
+      }
     } catch (err) {
-      setError(err.response.data.message);
+      addToast(err.response.data.message, {
+        appearance: 'error',
+        autoDismiss: true,
+      });
       console.log(err.response.data.message);
     }
   };
@@ -46,12 +63,18 @@ const ConfirmAdoption = () => {
       const response = await api.delete(`/adoption/${id}`);
 
       if (response.status === 200) {
-        history.push('/dashboard/adocoes');
+        addToast(response.data.message, {
+          appearance: 'success',
+          autoDismiss: true,
+        });
       }
-
-      console.log(response.data);
+      history.push('/dashboard/adocoes');
     } catch (err) {
-      setError(err.response.data.message);
+      addToast(err.response.data.message, {
+        appearance: 'error',
+        autoDismiss: true,
+      });
+
       console.log(err.response.data.message);
     }
   };
@@ -96,7 +119,9 @@ const ConfirmAdoption = () => {
             </div>
             {adoption.animal.status === 'adotado' ? (
               <div className='btn-group'>
-                <button className='btn-delete'>Excluir</button>
+                <button className='btn-delete' onClick={cancelAdoption}>
+                  Excluir
+                </button>
               </div>
             ) : (
               <div className='btn-group'>
@@ -111,7 +136,6 @@ const ConfirmAdoption = () => {
                 </button>
               </div>
             )}
-            {error && <p>{error}</p>}
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
+import { ToastProvider } from 'react-toast-notifications';
 import { AuthProvider } from './context/AuthContext';
 
 import Routes from './routes';
@@ -7,7 +8,9 @@ function App() {
   return (
     <BrowserRouter>
       <AuthProvider>
-        <Routes />
+        <ToastProvider>
+          <Routes />
+        </ToastProvider>
       </AuthProvider>
     </BrowserRouter>
   );
