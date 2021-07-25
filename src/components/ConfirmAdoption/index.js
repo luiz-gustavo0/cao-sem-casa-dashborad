@@ -36,7 +36,6 @@ const ConfirmAdoption = () => {
         appearance: 'error',
         autoDismiss: true,
       });
-      console.log(err.response.data.message);
     }
   };
 
@@ -54,7 +53,6 @@ const ConfirmAdoption = () => {
         appearance: 'error',
         autoDismiss: true,
       });
-      console.log(err.response.data.message);
     }
   };
 
@@ -74,8 +72,6 @@ const ConfirmAdoption = () => {
         appearance: 'error',
         autoDismiss: true,
       });
-
-      console.log(err.response.data.message);
     }
   };
 
