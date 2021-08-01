@@ -37,7 +37,6 @@ yarn install
 
 ## Author
 
-- GitHub: [@luiz-gustavo0](https://github.com/luiz-gustavo0)
 - LinkedIn: [@luiz-gustavo0](https://www.linkedin.com/in/luiz-gustavo0/)
 
 ## License
