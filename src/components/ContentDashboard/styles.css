@@ -1,0 +1,113 @@
+.dashboard-container .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.dashboard-container .list {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 4rem;
+}
+
+.dashboard-container .list h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.dashboard-container .list ul li {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-gray-light-1);
+}
+
+.dashboard-container .list .animal-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+}
+
+.dashboard-container .list .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.dashboard-container .list .btn-group a,
+.dashboard-container .list .btn-group button {
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+.dashboard-container .list .btn-group a {
+  padding: 0.5rem 1rem;
+  background: #ffa630;
+}
+
+.dashboard-container .list .btn-group button {
+  padding: 0.9rem 1rem;
+  background: #ff312e;
+}
+
+.dashboard-container .list .btn-group .btn-confirm-adoption {
+  background: var(--primary-color);
+}
+
+.dashboard-container .list .adoption-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard-container .list .adoption-animal,
+.dashboard-container .list .adoption-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8rem;
+}
+
+.dashboard-container .list .animal,
+.dashboard-container .list .adotante {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/*# sourceMappingURL=styles.css.map */

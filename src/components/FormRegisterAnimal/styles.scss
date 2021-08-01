@@ -1,0 +1,75 @@
+.form {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 4rem;
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+
+  .group {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    div {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+      color: inherit;
+    }
+
+    input,
+    select {
+      width: 100%;
+      font-size: 1.6rem;
+      padding: 0.8rem;
+      border: 1px solid rgba(153, 153, 153, 0.596);
+      border-radius: 0.5rem;
+      background: #fff;
+      color: inherit;
+      margin-bottom: 0.3rem;
+      transition: all 0.2s;
+    }
+
+    input {
+      &::placeholder {
+        color: var(--gray-color);
+      }
+
+      &:hover,
+      &:focus {
+        border-color: var(--gray-color);
+      }
+
+      &:disabled {
+        background: rgba(153, 153, 153, 0.192);
+
+        &:hover {
+          border-color: rgba(153, 153, 153, 0.192);
+        }
+      }
+    }
+
+    input[type='file'] {
+      padding: 0.6rem;
+    }
+  }
+
+  .group-select {
+    margin-top: 1.5rem;
+  }
+
+  button {
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 2rem;
+  }
+}

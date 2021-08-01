@@ -1,0 +1,47 @@
+.list-users {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 4rem;
+}
+
+.list-users h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.list-users ul li {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-gray-light-1);
+}
+
+.list-users .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+  text-align: center;
+}
+
+.list-users .user-info a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.list-users .user-info a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=styles.css.map */

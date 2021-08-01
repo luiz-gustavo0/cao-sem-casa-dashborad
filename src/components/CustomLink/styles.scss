@@ -1,0 +1,22 @@
+.active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: var(--primary-color);
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+    background-color 0.1s;
+}
+
+.active:hover::before,
+.active::before {
+  transform: scaleY(1);
+  width: 100%;
+}
+
+.active:active::before {
+  background-color: var(--primary-color-80);
+}

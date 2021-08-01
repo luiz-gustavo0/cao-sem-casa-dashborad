@@ -1,0 +1,86 @@
+.adoption-info-container {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 4rem;
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+
+  .adoption-info-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+
+    h4 {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+  }
+
+  .adoption-info-animal {
+    width: 40%;
+
+    .box-info-animal {
+      padding: 2rem 0rem;
+
+      img {
+        max-width: 25rem;
+        height: 25rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+      }
+
+      & > div {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .adption-info-user {
+    width: 60%;
+
+    .box-info-user {
+      padding: 2rem 0rem;
+
+      p {
+        margin-bottom: 0.8rem;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .btn-group {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      button {
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        border: none;
+        border-radius: 0.5rem;
+        color: #fff;
+      }
+
+      .btn-success {
+        background: #0b6e4f;
+      }
+
+      .btn-mail {
+        // background: var(--primary-color);
+        background: #208aae;
+      }
+
+      .btn-delete {
+        background: #ff312e;
+      }
+    }
+  }
+}

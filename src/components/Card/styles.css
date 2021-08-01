@@ -1,0 +1,42 @@
+.card {
+  width: 20rem;
+  height: 12rem;
+  padding: 1rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #fff;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.card span {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.card-animals span {
+  color: var(--secundary-color);
+}
+
+.card-adocoes span {
+  color: #5b85aa;
+}
+
+.card-users span {
+  color: #ffa630;
+}
+/*# sourceMappingURL=styles.css.map */

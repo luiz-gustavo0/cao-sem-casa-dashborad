@@ -1,0 +1,99 @@
+.adoption-info-container {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 4rem;
+  -webkit-box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+}
+
+.adoption-info-container h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.adoption-info-container .adoption-info-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+}
+
+.adoption-info-container .adoption-info-content h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.adoption-info-container .adoption-info-animal {
+  width: 40%;
+}
+
+.adoption-info-container .adoption-info-animal .box-info-animal {
+  padding: 2rem 0rem;
+}
+
+.adoption-info-container .adoption-info-animal .box-info-animal img {
+  max-width: 25rem;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.adoption-info-container .adoption-info-animal .box-info-animal > div {
+  margin-top: 2rem;
+}
+
+.adoption-info-container .adption-info-user {
+  width: 60%;
+}
+
+.adoption-info-container .adption-info-user .box-info-user {
+  padding: 2rem 0rem;
+}
+
+.adoption-info-container .adption-info-user .box-info-user p {
+  margin-bottom: 0.8rem;
+}
+
+.adoption-info-container .adption-info-user .box-info-user p span {
+  font-weight: 600;
+}
+
+.adoption-info-container .adption-info-user .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.adoption-info-container .adption-info-user .btn-group button {
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+.adoption-info-container .adption-info-user .btn-group .btn-success {
+  background: #0b6e4f;
+}
+
+.adoption-info-container .adption-info-user .btn-group .btn-mail {
+  background: #208aae;
+}
+
+.adoption-info-container .adption-info-user .btn-group .btn-delete {
+  background: #ff312e;
+}
+/*# sourceMappingURL=styles.css.map */
