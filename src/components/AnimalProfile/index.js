@@ -21,10 +21,7 @@ const schema = yup.object().shape({
   status: yup
     .string()
     .required('Este campo é obrigatorio.')
-    .equals(
-      ['adotado', 'não adotado', 'nao adotado'],
-      'Digite adotado ou não adotado'
-    ),
+    .equals(['adotado', 'nao adotado'], 'Digite adotado ou não adotado'),
   castrado: yup
     .string()
     .required('Este campo é obrigatorio.')

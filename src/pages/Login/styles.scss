@@ -33,7 +33,9 @@
     font-size: 1.6rem;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
-    border: 1px solid var(--gray-color);
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
     text-transform: uppercase;
     margin-top: 1.5rem;
   }
