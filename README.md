@@ -20,13 +20,13 @@ Projeto desenvolvido para meu TCC de Análise e Desenvolvimento de Sistemas.
 ### Clonar o repositório
 
 ```
-$ git clone git@github.com:luiz-gustavo0/cao-sem-casa-frontend.git
+$ git clone git@github.com:luiz-gustavo0/cao-sem-casa-dashborad.git
 ```
 
 ### Entrar no diretorio
 
 ```
-cd cao-sem-casa-frontend
+cd cao-sem-casa-dashborad
 ```
 
 ### Instalar as dependências
